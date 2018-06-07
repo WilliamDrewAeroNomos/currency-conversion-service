@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.in28minutes.rest.webservices.currencyconversionservice;
+package com.in28minutes.rest.webservices.currencyconversionservice.bean;
 
 import java.math.BigDecimal;
 
@@ -13,8 +13,8 @@ import java.math.BigDecimal;
 public class CurrencyConversionBean {
 
 	private Long id;
-	private String currency_from;
-	private String currency_to;
+	private String from;
+	private String to;
 	private BigDecimal conversionMultiple;
 	private BigDecimal quantity;
 	private BigDecimal totalCalculatedAmount;
@@ -29,40 +29,48 @@ public class CurrencyConversionBean {
 
 	/**
 	 * @param id
-	 * @param currency_from
-	 * @param currency_to
+	 * @param from
+	 * @param to
 	 * @param conversionMultiple
 	 * @param quantity
 	 * @param totalCalculatedAmount
 	 * @param port
 	 */
-	public CurrencyConversionBean(Long id, String currency_from,
-			String currency_to, BigDecimal conversionMultiple, BigDecimal quantity,
+	public CurrencyConversionBean(Long id, String from, String to,
+			BigDecimal conversionMultiple, BigDecimal quantity,
 			BigDecimal totalCalculatedAmount, int port) {
 		super();
 		this.id = id;
-		this.currency_from = currency_from;
-		this.currency_to = currency_to;
+		this.from = from;
+		this.to = to;
 		this.conversionMultiple = conversionMultiple;
 		this.quantity = quantity;
 		this.totalCalculatedAmount = totalCalculatedAmount;
 		this.port = port;
 	}
 
-	public String getCurrency_from() {
-		return currency_from;
+	public Long getId() {
+		return id;
 	}
 
-	public void setCurrency_from(String currency_from) {
-		this.currency_from = currency_from;
+	public void setId(Long id) {
+		this.id = id;
 	}
 
-	public String getCurrency_to() {
-		return currency_to;
+	public String getFrom() {
+		return from;
 	}
 
-	public void setCurrency_to(String currency_to) {
-		this.currency_to = currency_to;
+	public void setFrom(String currency_from) {
+		this.from = currency_from;
+	}
+
+	public String getTo() {
+		return to;
+	}
+
+	public void setTo(String currency_to) {
+		this.to = currency_to;
 	}
 
 	public BigDecimal getConversionMultiple() {
@@ -87,6 +95,14 @@ public class CurrencyConversionBean {
 
 	public int getPort() {
 		return port;
+	}
+
+	@Override
+	public String toString() {
+		return "CurrencyConversionBean [id=" + id + ", from=" + from + ", to=" + to
+				+ ", conversionMultiple=" + conversionMultiple + ", quantity="
+				+ quantity + ", totalCalculatedAmount=" + totalCalculatedAmount
+				+ ", port=" + port + "]";
 	}
 
 }
