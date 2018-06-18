@@ -1,4 +1,4 @@
-package com.in28minutes.rest.webservices.currencyconversionservice;
+package com.governmentcio.rest.webservices.currencyconversionservice;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -8,8 +8,14 @@ import org.springframework.context.annotation.Bean;
 
 import brave.sampler.Sampler;
 
+/**
+ * 
+ * @author <a href=mailto:support@governmentcio.com>support</a>
+ * 
+ *         Please document me!!
+ */
 @SpringBootApplication
-@EnableFeignClients("com..in28minutes.rest.webservices.currencyconversionservice")
+@EnableFeignClients("com.governmentcio.rest.webservices.currencyconversionservice")
 @EnableDiscoveryClient
 public class CurrencyConversionServiceApplication {
 

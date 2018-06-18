@@ -1,14 +1,15 @@
 /**
  * 
  */
-package com.in28minutes.rest.webservices.currencyconversionservice.bean;
+package com.governmentcio.rest.webservices.currencyconversionservice.bean;
 
 import java.math.BigDecimal;
 
 /**
- * @author <a href=mailto:support@aeronomos.org>aeronomos</a>
  * 
- *         Please document me!!
+ * @author <a href=mailto:support@governmentcio.com>support</a>
+ * 
+ * Please document me!!
  */
 public class CurrencyConversionBean {
 

@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.in28minutes.rest.webservices.currencyconversionservice;
+package com.governmentcio.rest.webservices.currencyconversionservice;
 
 import java.math.BigDecimal;
 import java.util.HashMap;
@@ -17,10 +17,11 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
 
-import com.in28minutes.rest.webservices.currencyconversionservice.bean.CurrencyConversionBean;
+import com.governmentcio.rest.webservices.currencyconversionservice.bean.CurrencyConversionBean;
 
 /**
- * @author <a href=mailto:support@aeronomos.org>aeronomos</a>
+ * 
+ * @author <a href=mailto:support@governmentcio.com>support</a>
  * 
  *         Please document me!!
  */
@@ -35,6 +36,13 @@ public class CurrencyConversionController {
 	@Autowired
 	private CurrencyExchangeServiceProxy proxy;
 
+	/**
+	 * 
+	 * @param from
+	 * @param to
+	 * @param quantity
+	 * @return
+	 */
 	@GetMapping("/currency-converter/from/{from}/to/{to}/quantity/{quantity}")
 	public CurrencyConversionBean convertCurrency(@PathVariable String from,
 			@PathVariable String to, @PathVariable BigDecimal quantity) {

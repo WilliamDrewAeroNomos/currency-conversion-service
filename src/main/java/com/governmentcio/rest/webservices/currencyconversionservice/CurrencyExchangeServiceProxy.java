@@ -1,17 +1,18 @@
 /**
  * 
  */
-package com.in28minutes.rest.webservices.currencyconversionservice;
+package com.governmentcio.rest.webservices.currencyconversionservice;
 
 import org.springframework.cloud.netflix.ribbon.RibbonClient;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 
-import com.in28minutes.rest.webservices.currencyconversionservice.bean.CurrencyConversionBean;
+import com.governmentcio.rest.webservices.currencyconversionservice.bean.CurrencyConversionBean;
 
 /**
- * @author <a href=mailto:support@aeronomos.org>aeronomos</a>
+ * 
+ * @author <a href=mailto:support@governmentcio.com>support</a>
  * 
  *         Please document me!!
  */
